@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="1" default="NeedIt" display="true" label="Grandparent" max_length="10" name="grandparent" type="string">
+            <choice/>
+        </element>
+        <element default="100" label="New Field1" max_length="10" name="new_field1" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="HR"/>
+                <element label="Facilities" sequence="1" value="WPS"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+                <element label="Information Technology" sequence="3" value="IT"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal1" label="What needed" mandatory="true" max_length="40" name="u_choice_4" type="string">
+            <choice>
+                <element label="Human Resources1" sequence="0" value="HR1"/>
+                <element label="Human Resources2" sequence="1" value="HR2"/>
+                <element label="Legal1" sequence="2" value="Legal1"/>
+                <element label="Legal2" sequence="3" value="Legal2"/>
+                <element label="Facilities1" sequence="4" value="Facilities1"/>
+                <element label="Facilities2" sequence="5" value="Facilities2"/>
+                <element label="Information Technology1" sequence="6" value="IT1"/>
+                <element label="Information Technology2" sequence="7" value="IT2"/>
+            </choice>
+        </element>
+        <element label="When needed" max_length="40" name="u_glide_date_time_5" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_reference_1" reference="sys_user" type="reference"/>
+    </element>
+</database>
